@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Div Layout</title>
+    <style type="text/css">
+        body{
+            font: 12px verdana, sans-serif; 
+            margin: 0px;
+        }
+        .wrapper{
+            width: 100%; 
+            height: 275px;
+        }
+        .header{
+            background-color: #679BB7; 
+            padding: 10px;
+        }
+        .header h1{
+            font-size: 18px; 
+            margin: 10px 0;
+        }
+        .container{
+            background-color: #f0f0f0; 
+            height: 170px;
+        }
+        .sidebar{
+            background-color: #bbd2df; 
+            width: 120px; 
+            height: 100%; 
+            float: left; 
+            text-align: left;
+        }
+        .sidebar .sidebar-inner{
+            padding: 10px;
+        }
+        ul.menu{
+            float: left; 
+            list-style: none; 
+            display: inline; 
+            padding: 0px; 
+            margin: 0px;
+        }
+        ul.menu li{
+            margin-bottom: 5px; 
+            width: 100%; 
+            float: left;
+        }
+        ul.menu li a{
+            color: #3d677e;
+        }
+        ul.menu li a:hover{
+            text-decoration: none;
+        }
+        .content{
+            height: 100%; 
+            float: left;
+        }
+        .content .content-inner{
+            padding: 10px;
+        }
+        .content h2{
+            font-size: 16px; 
+            margin: 0px;
+        }
+        .footer{
+            background-color: #679BB7; 
+            padding: 10px;
+        }
+        .footer p{
+            text-align:center; 
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Tutorial Republic</h1>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar-inner">
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-inner">
+                    <h2>Welcome to our site</h2>
+                    <p>Here you will learn to create websites...</p>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="footer">
+            <p>copyright &copy; tutorialrepublic.com</p>
+        </div>
+    </div>
+</body>
+</html>
